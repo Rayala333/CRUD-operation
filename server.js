@@ -5,7 +5,11 @@ const Prasad = require('./model');
 
 const app = express();
 
+//communication language
 app.use(express.json());
+
+//enabling port b/w components
+app.use(cors());
 
 const mongo ="mongodb+srv://Rayala:prasad333@prasad.lterq.mongodb.net/Product_data?retryWrites=true&w=majority";
 
